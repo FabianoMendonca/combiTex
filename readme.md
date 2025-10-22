@@ -213,12 +213,3 @@ bibtex main
 ```
 
 ---
-
-## 🏁 Resultado final
-
-✅ PDF compilado com bibliografia ABNT (via BibTeX)  
-✅ Ambiente isolado e reprodutível  
-✅ Nenhuma dependência local de LaTeX necessária  
-✅ Logs coloridos, tempo total e progresso visual  
-
----
