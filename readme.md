@@ -11,7 +11,7 @@ combiTex/
 │
 ├── Dockerfile
 ├── furgmpu.cls
-├── compile_latex_docker.py
+├── compile.py
 └── text/
     ├── main.tex
     ├── refs.bib
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 ```
 
 
-O arquivo principal é **`compile_latex_docker.py`**, responsável por:
+O arquivo principal é **`compile.py`**, responsável por:
 
 - Invocar o container Docker
 - Rodar `pdflatex → bibtex → pdflatex → pdflatex`
