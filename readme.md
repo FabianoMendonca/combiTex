@@ -67,6 +67,8 @@ Versão recomendada: Python 3.11.4
 ```
 ---
 
+### 🧱 1️⃣ Criar o ambiente virtual (opcional)
+
 ### 🪟 **No Windows**
 
 Se você possui mais de uma versão (por exemplo, Python 3.10 e 3.12), use o *Python Launcher* (`py`) para especificar:
@@ -75,7 +77,21 @@ Se você possui mais de uma versão (por exemplo, Python 3.10 e 3.12), use o *Py
 # Cria o ambiente com Python 3.10
 py -3.10 -m venv .venv
 ```
-### Ativar o ambiente:
+### 🐧 **No Linux / macOS**
+
+Especifique a versão diretamente:
+```bash
+python3.10 -m venv .venv
+```
+
+ou simplesmente:
+
+```bash
+python3 -m venv .venv
+```
+---
+
+### ✨ **Ativar o ambiente**:
 
 Windows (PowerShell):
 ```bash
@@ -91,8 +107,9 @@ Linux / macOS:
 ```bash
 source .venv/bin/activate
 ```
+---
 
- Quando o ambiente estiver ativo, o terminal mostrará algo como: 
+### ✅ Quando o ambiente estiver ativo, o terminal mostrará algo como: 
 ```bash
 (.venv) D:\combiTex>
 ```
@@ -107,15 +124,15 @@ Depois, instale tudo com:
 pip install -r requirements.txt
 ```
 
-
-O arquivo principal é **`.py`**, responsável por:
+---
+O arquivo principal é **`compile.py`**, responsável por:
 
 - Invocar o container Docker
 - Rodar `pdflatex → bibtex → pdflatex → pdflatex`
 - Exibir barra de progresso e tempo total
 - Limpar arquivos temporários
 
-### 🧩 Configuração principal
+### 🧩 Configuração principal 
 
 Edite no topo do script:
 
@@ -134,7 +151,7 @@ Certifique-se de apontar `USER_PROJECT_PATH` para o diretório onde está o seu 
 Com o Docker rodando, execute:
 
 ```bash
-python .py
+python compile.py
 ```
 
 O script:
