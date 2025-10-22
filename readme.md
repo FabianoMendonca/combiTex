@@ -108,7 +108,7 @@ pip install -r requirements.txt
 ```
 
 
-O arquivo principal é **`compile.py`**, responsável por:
+O arquivo principal é **`.py`**, responsável por:
 
 - Invocar o container Docker
 - Rodar `pdflatex → bibtex → pdflatex → pdflatex`
@@ -134,7 +134,7 @@ Certifique-se de apontar `USER_PROJECT_PATH` para o diretório onde está o seu 
 Com o Docker rodando, execute:
 
 ```bash
-python compile_latex_docker.py
+python .py
 ```
 
 O script:
